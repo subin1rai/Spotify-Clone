@@ -31,7 +31,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 72px;
+  height: 82px;
 }
 
 .nav {
@@ -225,9 +225,7 @@ a {
     justify-content: space-between;
     
 }
-.album{
-    width: 25%;
-}
+
 .center-player{
     width: 50%;
 }
@@ -265,4 +263,91 @@ a {
 
 .progress{
     width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
 }
+
+.progress::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 1rem;
+  height: 0.2rem;
+}
+
+.progress::-webkit-slider-thumb{
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.album{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+
+.alb-card img {
+  height: 50px;
+  width: 50px;
+  margin-right:1rem;
+}
+
+.album-title{
+  line-height: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.album-info{
+  line-height: 4px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.alb-icon{
+  margin-left: 1rem;
+}
+.alb-icon i{
+  font-size: 18px;
+  opacity: 0.5;
+  padding: 0 0.5rem 0 0.5rem;
+
+}
+
+.alb-icon i:hover{
+  opacity: 1;
+}
+
+.control{
+  margin-right: 1.4rem;
+}
+
+.ctrl{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.volume{
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.volume::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 2rem;
+  height: 0.3rem;
+  width: 0.4rem;
+}
+
+.volume::-webkit-slider-thumb{
+  appearance: none;
+}
+
